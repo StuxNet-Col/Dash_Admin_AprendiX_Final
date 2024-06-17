@@ -1,0 +1,45 @@
+.users-container {
+    padding: 20px;
+  }
+  
+  .users-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .user-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+ .user-avatar {
+  width: 100px; /* Tamaño deseado para la imagen de perfil */
+  height: 100px; /* Tamaño deseado para la imagen de perfil */
+  border-radius: 50%; /* Para hacer la imagen circular */
+  overflow: hidden; /* Para ocultar cualquier parte de la imagen que se salga del círculo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar la imagen */
+}
+
+.user-avatar img {
+  width: 100%; /* Para que la imagen ocupe todo el espacio disponible */
+  height: 100%; /* Para que la imagen ocupe todo el espacio disponible */
+  object-fit: cover; /* Para ajustar la imagen dentro del contenedor sin deformarla */
+} 
+  
+  .user-details {
+    margin-top: 10px;
+  }
+  
+  .no-users-message {
+    text-align: center;
+    font-style: italic;
+  }
+  

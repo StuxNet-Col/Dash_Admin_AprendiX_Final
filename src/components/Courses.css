@@ -1,0 +1,141 @@
+/* src/components/Courses.css */
+.courses-container {
+  padding: 20px;
+}
+
+.courses-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.courses-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.course-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-details h3 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.admin-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.admin-buttons button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.admin-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.no-courses-message {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* Estilos del Modal */
+.modal {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none; /* Asegurar que los modales estén ocultos por defecto */
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+}
+
+.close {
+  color: #aaa;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.modal-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-checkbox {
+  margin-right: 10px;
+}
+
+.modal-submit-button {
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.modal-submit-button:hover {
+  background-color: #218838;
+}
+
+/* Estilos del Modal Activo */
+.modal.active {
+  display: flex;
+}
